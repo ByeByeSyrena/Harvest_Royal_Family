@@ -24,18 +24,23 @@
     <div class="container heder-nav-menu">
         <nav class="header-nav">
     <ul class="header-list list" >
-        <li class="header-item item"> <a class="header-link link" href="">How It Works</a></li>
-        <li class="header-item item"><a class="header-link link" href="">Fruits</a></li>
-        <li class="header-item item"><a class="header-link link" href="">Contacts</a></li>
+        <li class="header-item item"> <a class="header-link link" href="#works">How It Works</a></li>
+        <li class="header-item item"><a class="header-link link" href="#fruits">Fruits</a></li>
+        <li class="header-item item"><a class="header-link link" href="#contacts">Contacts</a></li>
     </ul>
     <a href="/" class="header-logo link">
-        <img src="" alt="logo"><span class="heder-logo-text link">FRESH HARVEST BOX</span></a>
+      <svg class="header-logo-icon" width="16" height="16">
+        <use href="../img/icons/sprite.svg#icon-logo"></use>
+      </svg>
+       <span class="header-logo-text link">FRESH HARVEST BOX</span></a>
 </nav>
-    <button class="heder-button" type="button">
-        <svg class="" width="24" height="24">
-          <use href=""></use>
-        </svg>
-    </button>
+<button mobile-but type="button">
+  <a href="" class="mobile-icon-link">
+    <svg class="mob-icon" width="24" height="24">
+      <use href="../img/icons/sprite.svg#icon-basket"></use>
+    </svg>
+  </a>
+</button>
     <button
     class="menu-toggle js-open-menu"
     aria-expanded="false"
@@ -49,10 +54,21 @@
     >
       <use
         class="icon-menu"
-        href=""
-      ></use>
+        href="../img/icons/sprite.svg#gg_menu-left"></use>
+        
     </svg>
   </button>
+       <button class="menu-toggle js-close-menu" type="button">
+        <svg
+          class="modal-icon"
+          width="12"
+          height="12"
+          aria-label="Переключатель мобильного меню"
+        >
+          <use class="icon-cross" href="../img/icons/sprite.svg#icon-closed"></use>
+        </svg>
+      </button>
+  
   </div>
 </header>
 
