@@ -1,4 +1,3 @@
-body { background-color: var(--red-color );}
 
 .sec-how-item {
     display: flex;
@@ -17,8 +16,6 @@ body { background-color: var(--red-color );}
 }
 
 .heading {
-font-family: 'DM Sans';
-font-style: normal;
 font-weight: 500;
 font-size: 28px;
 line-height: 1;
@@ -31,13 +28,10 @@ letter-spacing: -0.04em;
 text-transform: uppercase;
 
 color: var(--white-color);
-
-text-shadow: 0px 4px 70px rgba(0, 0, 0, 0.1);
+text-shadow: var(--shadow);
 }
 
 .discription {
-    font-family: 'DM Sans';
-font-style: normal;
 font-weight: 400;
 font-size: 14px;
 line-height: 1.29;
@@ -50,12 +44,10 @@ letter-spacing: -0.04em;
 
 color: var(--white-color);
 
-text-shadow: 0px 4px 70px rgba(0, 0, 0, 0.1);
+text-shadow: var(--shadow);
 }
 
 .heading-item {
-font-family: 'DM Sans';
-font-style: normal;
 font-weight: 400;
 font-size: 18px;
 line-height: 1.33;
@@ -106,8 +98,6 @@ color: var(--white-color);
 }
 
 .discription-item {
-font-family: 'DM Sans';
-font-style: normal;
 font-weight: 400;
 font-size: 14px;
 line-height: 1.29;
@@ -118,7 +108,7 @@ letter-spacing: -0.04em;
 
 color: var(--black-color);
 
-text-shadow: 0px 4px 70px rgba(0, 0, 0, 0.1);
+text-shadow: var(--shadow);
 
 display: block;
 width: 145px;
