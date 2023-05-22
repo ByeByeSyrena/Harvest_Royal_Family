@@ -17,7 +17,7 @@
     <title>Fresh Harvest Box</title>
     
     <script type="module" crossorigin src="/Harvest_Royal_Family/assets/index-74530249.js"></script>
-    <link rel="stylesheet" href="/Harvest_Royal_Family/assets/index-92e35462.css">
+    <link rel="stylesheet" href="/Harvest_Royal_Family/assets/index-1703e03b.css">
   </head>
   <body>
     <header class="header">
@@ -459,7 +459,7 @@
     <div class="fruits-btn-wrapper">
       <button class="btn-fruits" type="button">
         <svg class="fruits-icon" width="14" height="14">
-          <use href="/Harvest_Royal_Family/assets/sprite-5172d2dc.svg#icon-vector-2"></use>
+          <use href="/Harvest_Royal_Family/assets/sprite-454a59bf.svg#icon-vector-2"></use>
         </svg>
         ORDER
       </button>
@@ -629,82 +629,196 @@
   </div>
 </footer>
 
-    <div class="your-order-modal-backrod is-hidden" data-modal>
-    <div class="your-order-window">
-        <div  class="your-order-phone">
-        <button class="your-order-button" type="button" data-modal-close>
-            <svg class="your-order-modal-icon">
-              <use href="../img/icons/sprite.svg#icon-closed"></use>
-            </svg>
-          </button>
-              <h2 class="your-order-header">Your Order</h2>
-            </div>
-            <ul class="your-order-list">
-                <li class="your-order-item your-order-item-st">
-                    <label>
-                        <input
-                          class="your-order-box"
-                          type="checkbox"
-                          name="user_accept"
-                        />
-                    </label>
-                    <div class="your-order-p" >
-                    <img  class="your-order-picture"
-            src="../img/modal/kisspng-strawberryphone.png"
-            alt="strawberry"
-             srcset="../img/modal/kisspng-strawberryphone@2x.png"
-          />
-          <div class="your-order-text">
-          <h3 class="your-order-note-mid">Strawberry Basket</h3>
-          <p class="your-order-note">Plant</p>
-        </div>
-    </div>
-                         </li>
-        <li class="your-order-item your-order-item-apple">
-            <label class="contact-accept contact-box">
-                <input
-                  class="your-order-box"
-                  type="checkbox"
-                  name="user_accept"
-                />
-            </label>
-            <div class="your-order-p" >
-                <img  class="your-order-picture"
-                src="../img/modal/phoneapple.png"
-                alt="apple"
-                 srcset="../img/modal/phoneapple@2x.png"
-              />
-              <div class="your-order-text">
-              <h3 class="your-order-note-mid">Apple Basket</h3>
-              <p class="your-order-note">Plant</p>
-            </div>
-            </div>
-                </li>
-                <li class="your-order-item your-order-item-fruits">
-                    <label>
-                        <input
-                          class="your-order-box"
-                          type="checkbox"
-                          name="user_accept"
-                        />
-                    </label>
-                    <div class="your-order-p" >
-                    <img  class="your-order-picture"
-                    src="../img/modal/phonefruts.png"
-                    alt="Fruits"
-                     srcset="../img/modal/phonefruts@2x.png"
-                  />
-                  <div class="your-order-text">
-                  <h3 class="your-order-note-mid">Fruits Basket</h3>
-                  <p class="your-order-note">Plant</p>
-                </div>
-            </div>
-                </li>
-
-            </ul>
-    </div>
+    <button
+  class="yourorder-modal-open-btn btn"
+  type="button"
+  data-modal-your-oder-open
+>
+  <div class="conteiner-icon">
+    <svg class="yourorder-modal-icon-open" width="14" height="14">
+      <use href="../img/icons/sprite.svg#icon-order"></use>
+    </svg>
+    <p class="btn-uppertitle">ORDER</p>
   </div>
-  
+</button>
+<!-- ======================================================================= -->
+<!--  МОДАЛЬНЕ ВІКНО (Your Order) ===========================================-->
+<div class="backdrop is-hidden" your-oder-data-modal>
+  <div class="yourorder-modal">
+    <!-- КНОПКА ЗАКРИВАЮЧА=========================================== -->
+
+    <button
+      class="yourorder-modal-close-btn btn"
+      type="button"
+      data-modal-your-oder-close
+    >
+      <svg class="yourorder-modal-icon-close" width="12" height="12">
+        <use href="../img/icons/sprite.svg#icon-x"></use>
+      </svg>
+    </button>
+    <!-- ============================================================= -->
+    <h1 class="yourorder-modal-title">YOUR ORDER</h1>
+    <form class="yourorder-form" action="">
+      <div class="container-form-checkbox">
+        <!-- STRAWBERRY checkbox ====================================-->
+        <label class="yourorder-modal-form-checkbox" for="strawberry">
+          <div class="container-checkbox-strawberry container-checkbox">
+            <input
+              class="yourorder-modal-form-checkbox-imput"
+              type="checkbox"
+              name="strawberry"
+              id="strawberry"
+            />
+            <svg
+              class="yourorder-modal-form-checkbox-icon"
+              width="6"
+              height="6"
+            >
+              <use href="../img/icons/sprite.svg#icon-pick"></use>
+            </svg>
+            <div class="container-text">
+              <h3 class="yourorder-modal-form-checkbox-head">
+                Strawberry Basket
+              </h3>
+              <p class="yourorder-modal-form-checkbox-uppertitle">Plant</p>
+            </div>
+            <img
+              class="yourorder-modal-form-checkbox-str-img"
+              srcset="/Harvest_Royal_Family/assets/88x95-strawberry-mob@1x-ce74d3bb.png 88w, /Harvest_Royal_Family/assets/88x95-strawberry-mob@2x-058dce0b.png 176w, /Harvest_Royal_Family/assets/133x148-strawberry-tab@1x-8604eab9.png 133w, /Harvest_Royal_Family/assets/133x148-strawberry-tab@2x-e63d1f2b.png 266w, /Harvest_Royal_Family/assets/173x196-strawberry-desk@1x-fd4d5159.png 173w, /Harvest_Royal_Family/assets/173x196-strawberry-desk@2x-6f40047d.png 346w"
+              sizes="(min-width: 1280px) 173px, (min-width: 768px) 133px, (min-width: 375px) 88px, 100vw"
+              src="/Harvest_Royal_Family/assets/173x196-strawberry-desk@1x-fd4d5159.png"
+              alt="John Smith"
+              width="173"
+              height="196"
+              loading="lazy"
+            />
+          </div>
+        </label>
+        <!-- ======================================================= -->
+        <!-- APPLE checkbox =========================================-->
+        <label class="yourorder-modal-form-checkbox" for="apple">
+          <div class="container-checkbox-apple container-checkbox">
+            <input
+              class="yourorder-modal-form-checkbox-imput"
+              type="checkbox"
+              name="apple"
+              id="apple"
+            />
+            <svg
+              class="yourorder-modal-form-checkbox-icon"
+              width="6"
+              height="6"
+            >
+              <use href="../img/icons/sprite.svg#icon-pick"></use>
+            </svg>
+            <div class="container-text">
+              <h3 class="yourorder-modal-form-checkbox-head">Apple Basket</h3>
+              <p class="yourorder-modal-form-checkbox-uppertitle">Plant</p>
+            </div>
+            <img
+              class="yourorder-modal-form-checkbox-appl-img"
+              srcset="/Harvest_Royal_Family/assets/106x95-apple-mob@1x-8cec34b9.png 106w, /Harvest_Royal_Family/assets/106x95-apple-mob@2x-d5f21259.png 212w, /Harvest_Royal_Family/assets/172x148-apple-tab@1x-36490095.png 172w, /Harvest_Royal_Family/assets/172x148-apple-tab@2x-67f5f5ce.png 344w, /Harvest_Royal_Family/assets/229x196-apple-desk@1x-69cbd681.png 229w, /Harvest_Royal_Family/assets/229x196-apple-desk@2x-995d3c97.png 458w"
+              sizes="(min-width: 1280px) 229px, (min-width: 768px) 172px, (min-width: 375px) 106px, 100vw"
+              src="/Harvest_Royal_Family/assets/229x196-apple-desk@1x-69cbd681.png"
+              alt="John Smith"
+              width="229"
+              height="196"
+              loading="lazy"
+            />
+          </div>
+        </label>
+        <!-- =======================================================-->
+        <!-- FRUITS checkbox =======================================-->
+        <label class="yourorder-modal-form-checkbox" for="fruits">
+          <div class="container-checkbox-fruits container-checkbox">
+            <input
+              class="yourorder-modal-form-checkbox-imput"
+              type="checkbox"
+              name="fruits"
+              id="fruits"
+            />
+            <svg
+              class="yourorder-modal-form-checkbox-icon"
+              width="6"
+              height="6"
+            >
+              <use href="../img/icons/sprite.svg#icon-pick"></use>
+            </svg>
+            <div class="container-text">
+              <h3 class="yourorder-modal-form-checkbox-head">
+                Strawberry Basket
+              </h3>
+              <p class="yourorder-modal-form-checkbox-uppertitle">Plant</p>
+            </div>
+            <img
+              class="yourorder-modal-form-checkbox-frut-img"
+              srcset="/Harvest_Royal_Family/assets/107x95-fruits-mob@1x-c8474d76.png 107w, /Harvest_Royal_Family/assets/107x95-fruits-mob@2x-d6fbdf20.png 214w, /Harvest_Royal_Family/assets/172x148-fruits-tab@1x-326a1a08.png 172w, /Harvest_Royal_Family/assets/172x148-fruits-tab@2x-abf3b22c.png 344w, /Harvest_Royal_Family/assets/229x196-fruits-desk@1x-505476ae.png 229w, /Harvest_Royal_Family/assets/229x196-fruits-desk@2x-4e73102e.png 458w"
+              sizes="(min-width: 1280px) 229px, (min-width: 768px) 172px, (min-width: 375px) 107px, 100vw"
+              src="/Harvest_Royal_Family/assets/229x196-fruits-desk@1x-505476ae.png"
+              alt="John Smith"
+              width="229"
+              height="196"
+              loading="lazy"
+            />
+          </div>
+        </label>
+        <!-- ======================================================= -->
+      </div>
+      <div class="container-input">
+        <!-- INPUT NAME =============================================-->
+        <label class="yourorder-modal-label" for="yourorder-name">
+          <input
+            class="yourorder-modal-input"
+            type="text"
+            name="yourorder-name"
+            placeholder="Enter full name..."
+            id="yourorder-name"
+            required
+          />
+        </label>
+        <!-- ======================================================= -->
+        <!-- INPUT MAIL =============================================-->
+        <label class="yourorder-modal-label" for="yourorder-mail">
+          <input
+            class="yourorder-modal-input"
+            type="email"
+            name="yourorder-mail"
+            placeholder="Enter email..."
+            id="yourorder-mail"
+            required
+          />
+        </label>
+        <!-- ======================================================= -->
+        <!-- INPUT CARD =============================================-->
+        <label class="yourorder-modal-label" for="yourorder-card">
+          <input
+            class="yourorder-modal-input"
+            type=""
+            name="yourorder-card"
+            placeholder="Enter card.."
+            id="yourorder-card"
+          />
+        </label>
+        <!-- ======================================================= -->
+        <!-- TEXTAREA ===============================================-->
+        <label class="yourorder-modal-label-texterea" for="yourorder_comments">
+          <textarea
+            class="yourorder-modal-textarea"
+            name="yourorder_comments"
+            placeholder="Enter comments..."
+            cols="30"
+            rows="5"
+          ></textarea>
+        </label>
+        <!-- ======================================================= -->
+      </div>
+      <!-- КНОПКА ЗАКАЗА ==========================================-->
+      <button class="yourorder-modal-submit-btn" type="submit">Submit</button>
+      <!-- ======================================================= -->
+    </form>
+  </div>
+</div>
+<!-- ====================================================== -->
 
     <!-- Modal window -->
 <div class="thank-you-modal-backrod is-hidden" data-modal>
@@ -769,5 +883,8 @@
     ></script>
     
     
+    <!-- ППІДКЛЮЧЕННЯ JS ДО МОДАЛКИ (Your Order)=============== -->
+    <script src="./your-oder-modal.js"></script>
+    <!-- =======================================================-->
   </body>
 </html>
