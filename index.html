@@ -16,8 +16,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Fresh Harvest Box</title>
     
-    <script type="module" crossorigin src="/Harvest_Royal_Family/assets/index-74530249.js"></script>
-    <link rel="stylesheet" href="/Harvest_Royal_Family/assets/index-1703e03b.css">
+    <script type="module" crossorigin src="/Harvest_Royal_Family/assets/index-30839b11.js"></script>
+    <link rel="stylesheet" href="/Harvest_Royal_Family/assets/index-b753b127.css">
   </head>
   <body>
     <header class="header">
@@ -26,7 +26,7 @@
       <nav class="header-nav">
         <ul class="header-list list">
           <li class="header-item item">
-            <a class="header-link link" href="#works">How It Works</a>
+            <a class="header-link link" href="#how it works">How It Works</a>
           </li>
           <li class="header-item item">
             <a class="header-link link" href="#fruits">Fruits</a>
@@ -51,7 +51,7 @@
       <span class="header-logo-text link">FRESH HARVEST BOX</span></a
     >
     <button
-      class="menu-toggle is-open"
+      class="mobile-menu-toggle is-open"
       aria-expanded="false"
       aria-controls="mobile-menu"
       data-menu-button
@@ -61,6 +61,30 @@
           class="icon-menu"
           href="../img/icons/sprite.svg#gg_menu-left"
         ></use>
+      </svg>
+    </button>
+  </div>
+</header>
+<!-- MOB -->
+<div class="menu-container js-menu-container" id="mobile-menu">
+  <div class="menu-header">
+    <a href="../index.html" class="header-logo link">
+      <svg class="header-logo-icon" width="16" height="16">
+        <use href="../img/icons/sprite.svg#icon-logo"></use>
+      </svg>
+      <span class="header-logo-text link">FRESH HARVEST BOX</span></a
+    >
+    <button
+      class="close-menu js-close-menu"
+      type="button"
+      aria-label="Close main menu"
+    >
+      <svg
+        class=""
+        width="24"
+        height="24"
+        aria-label="Преключатель мобильного меню"
+      >
         <use
           class="icon-cross modal-icon"
           href="../img/icons/sprite.svg#icon-closed"
@@ -68,7 +92,25 @@
       </svg>
     </button>
   </div>
-</header>
+  <ul class="mobile-menu list">
+    <li class="mobile-item item">
+      <a class="mobile-link current link" href="#works">How It Works</a>
+    </li>
+    <li class="mobile-item item">
+      <a class="mobile-link link" href="#fruits">Fruits</a>
+    </li>
+    <li class="mobile-item item">
+      <a class="mobile-link link" href="#contacts">Contacts</a>
+    </li>
+  </ul>
+  <button class="mobile-but" type="button">
+    <a href="#fruits" class="mobile-icon-link">
+      <svg class="mob-icon" width="28" height="28">
+        <use href="../img/icons/sprite.svg#uil_cartW"></use>
+      </svg>
+    </a>
+  </button>
+</div>
 
     <main>
       <!-- hero section -->
@@ -848,7 +890,7 @@
   </div>
 </div>
 
-    <div class="menu-container js-menu-container" id="mobile-menu">
+    <!-- <div class="menu-container js-menu-container" id="mobile-menu">
     
 
     <ul class="mobile-menu list">
@@ -869,9 +911,7 @@
         </svg>
       </a>
     </button>
-    
-    
-  </div>
+  </div> -->
 
     <!-- Loads the specified .html file -->
 
@@ -883,8 +923,6 @@
     ></script>
     
     
-    <!-- ППІДКЛЮЧЕННЯ JS ДО МОДАЛКИ (Your Order)=============== -->
-    <script src="./your-oder-modal.js"></script>
-    <!-- =======================================================-->
+    
   </body>
 </html>
