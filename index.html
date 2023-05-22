@@ -17,7 +17,7 @@
     <title>Fresh Harvest Box</title>
     
     <script type="module" crossorigin src="/Harvest_Royal_Family/assets/index-10828545.js"></script>
-    <link rel="stylesheet" href="/Harvest_Royal_Family/assets/index-44373f7f.css">
+    <link rel="stylesheet" href="/Harvest_Royal_Family/assets/index-4897d97b.css">
   </head>
   <body>
     <header class="header">
@@ -121,95 +121,160 @@
     <main>
       <!-- hero section -->
 <section class="hero">
-  <div class="container">
+  <div class="container hero-width">
+    <div class="hero-girl-border">
+      <picture>
+        <source
+          srcset="/Harvest_Royal_Family/assets/1girlnew-65ea9215.png 1x, /Harvest_Royal_Family/assets/1girl2xnew-b1a902aa.png 2x"
+          media="(max-width: 767px)"
+          type="image/png"
+        />
+        <source
+          srcset="/Harvest_Royal_Family/assets/girlnew-560575d0.jpg 1x, /Harvest_Royal_Family/assets/girl2xnew-5dfb43e1.jpg 2x"
+          media="(min-width: 768px)"
+          type="image/jpeg"
+        />
+        <img src="/Harvest_Royal_Family/assets/girlnew-560575d0.jpg" alt="girl" class="hero-girl" />
+      </picture>
+    </div>
     <div class="hero-title-box">
       <h1 class="hero-title">
         fresh harvest box<br />
         is your one-stop place for a delicious fruit basket
       </h1>
     </div>
-    <div class="hero-girl-border">
-      <!-- чи треба ставити дескриптор 1х та 2х? КОСИЦЯ 2.15хв -->
-      <img
-        class="hero-girl"
+    <picture>
+      <source
         srcset="
-    ../img/hero/top_hero/top_hero.jpg
-    ../img/hero/top_hero/top_hero@2x.jpg
-    ../img/hero/top_hero_mobile/top_hero_mobile.jpg
-    ../img/hero/top_hero_mobile/top_hero_mobile@2x.jpg
-    "
-        src="../img/hero/top_hero/top_hero.jpg"
-        alt="girl with the lemon"
+          img/hero/banana_berry/imagebanana.png 1x,
+          img/hero/banana_berry/banana@2x.png   2x
+        "
+        media="(max-width: 767px)"
+        type="image/png"
       />
+      <source
+        srcset="/Harvest_Royal_Family/assets/banana_tab-a89f19dd.png 1x, /Harvest_Royal_Family/assets/banana_tab@2x-079ec477.png 2x"
+        media="(min-width: 768px)"
+        type="image/png"
+      />
+      <source
+        srcset="/Harvest_Royal_Family/assets/banana_desk-8ef17df6.png 1x, /Harvest_Royal_Family/assets/banana_desk@2x-374f4d28.png 2x"
+        media="(min-width: 1280px)"
+        type="image/png"
+      />
+      <img
+        src="img/banana_berry/banana_desk.png"
+        alt="banana"
+        class="hero-banana"
+      />
+    </picture>
+    <picture>
+      <source
+        srcset="data:image/png;base64,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 1x, /Harvest_Royal_Family/assets/imagestrawberry@2x-26ada220.png 2x"
+        media="(max-width: 767px)"
+        type="image/png"
+      />
+      <source
+        srcset="/Harvest_Royal_Family/assets/strawberry_tab-437a0f21.png 1x, /Harvest_Royal_Family/assets/strawberry_tab@2x-b9ce8a00.png 2x"
+        media="(min-width: 768px)"
+        type="image/png"
+      />
+      <source
+        srcset="/Harvest_Royal_Family/assets/strawberry_desk-1f4569fd.png 1x, /Harvest_Royal_Family/assets/strawberry_desk@2x-d3cd5493.png 2x"
+        media="(min-width: 1280px)"
+        type="image/png"
+      />
+      <img
+        class="hero-berry"
+        src="/Harvest_Royal_Family/assets/strawberry_desk-1f4569fd.png"
+        alt="banana"
+      />
+    </picture>
+    <!-- BTN SHOP NOW -->
+    <div class="hero-btn-container">
+      <button class="hero-btn" type="button">
+        <h2 class="hero-btn-desc"><a href="#fruits">shop now</a></h2>
+      </button>
     </div>
   </div>
-  <!-- 111111111111111 -->
-  <div class="hero-btn-container">
-    <button class="hero-btn" type="button">
-      <h2 class="hero-btn-desc"><a href="#fruits">shop now</a></h2>
-    </button>
-    <!-- ПІТИ ПОДИВИТИСЬ, ЯК НАСТЯ НАЗВАЛА СВОЮ СЕКЦІЮ, ТОМУ ЩО МАЄ СПРАЦЮВАТИ ЯКІРЬ ДО СЕКЦІЇ ORGANIC FRUITS -->
-  </div>
 
-  <!-- 222222222222222 -->
-  <div class="hero-description-container">
-    <p class="hero-description">
-      Our expertly curated fruit baskets are made with the freshest, highest
-      quality fruits available. Whether you are looking for a healthy snack or a
-      gift for a loved one, Fresh Harvest Box has got you covered.
-    </p>
-  </div>
+  <!-- Yulia Part  -->
 
-  <!-- 3333333333333333 -->
-  <div class="hero-first-block-container">
-    <p class="hero-block-title">Fruit</p>
-    <img
-      class="hero-pic"
-      srcset="
-        ../img/hero/basket_strawberris/basket_strawberris@1x.png 200w,
-        ../img/hero/basket_strawberris/basket_strawberris@2x.png 200w
-      "
-      src="../img/hero/basket_strawberris/basket_strawberris@1x.png"
-      alt="basket with strawberries"
-    />
-    <p class="hero-desc">
-      Refreshing and juicy, watermelon is the perfect summer treat and a great
-      source of hydration
-    </p>
-  </div>
-  <!-- 44444444444444444444444 -->
-  <div class="hero-scroll-btn-container">
-    <button type="button"><h3 class="hero-scroll-btn">&#35;organic</h3></button>
-    <button type="button">
-      <h3 class="hero-scroll-btn">&#35;products</h3>
-    </button>
-    <button type="button"><h3 class="hero-scroll-btn">&#35;basket</h3></button>
-    <button type="button"><h3 class="hero-scroll-btn">&#35;fruits</h3></button>
-  </div>
+  <div class="hero-desc-section">
+    <!-- first side -->
+    <div class="hero-first-container">
+      <p class="hero-description">
+        Our expertly curated fruit baskets are made with the freshest, highest
+        quality fruits available. Whether you are looking for a healthy snack or
+        a gift for a loved one, Fresh Harvest Box has got you covered.
+      </p>
+      <div class="hero-first-wrapper">
+        <p class="hero-first-title">Fruit</p>
+        <img
+          class="hero-first-pic"
+          srcset="/Harvest_Royal_Family/assets/watermelon@1x-8a254fb3.png 1x, /Harvest_Royal_Family/assets/watermelon@2x-83a7de66.png 2x"
+          src="/Harvest_Royal_Family/assets/watermelon@1x-8a254fb3.png"
+          width="200"
+          height="172"
+          alt="watermelon"
+        />
+        <p class="hero-desc">
+          Refreshing and juicy, watermelon is the perfect summer treat and a
+          great source of hydration
+        </p>
+      </div>
+    </div>
+    <!-- second side-->
 
-  <!-- 55555555555555555555555 -->
-  <div class="hero-second-block-container">
-    <p class="hero-block-title">Fruit</p>
-    <img
-      class="hero-pic"
-      srcset="
-        ../img/hero/basket_strawberris/basket_strawberris@1x.png 200w,
-        ../img/hero/basket_strawberris/basket_strawberris@2x.png 200w
-      "
-      src="../img/hero/basket_strawberris/basket_strawberris@1x.png"
-      alt="basket with strawberries"
-    />
-    <p class="hero-desc">
-      Sweet and juicy, strawberries are packed with vitamin C and antioxidants,
-      making them a delicious and healthy snack
-    </p>
+    <div class="hero-second-container">
+      <div class="hero-scroll-container">
+        <div>
+          <ul class="hero-scrol-list list">
+            <li>
+              <button class="hero-scroll-btn-one" type="button">
+                <h3 class="hero-scroll-btn-title">&#35;organic</h3>
+              </button>
+            </li>
+            <li>
+              <button class="hero-scroll-btn-one" type="button">
+                <h3 class="hero-scroll-btn-title">&#35;products</h3>
+              </button>
+            </li>
+          </ul>
+        </div>
+        <div>
+          <ul class="hero-scrol-list hero-scrol-list-unite list">
+            <li>
+              <button class="hero-scroll-btn-two" type="button">
+                <h3 class="hero-scroll-btn-title">&#35;basket</h3>
+              </button>
+            </li>
+            <li>
+              <button class="hero-scroll-btn-two" type="button">
+                <h3 class="hero-scroll-btn-title">&#35;fruits</h3>
+              </button>
+            </li>
+          </ul>
+        </div>
+      </div>
+      <div class="hero-second-wrapper">
+        <p class="hero-second-title">Fruit</p>
+        <img
+          class="hero-second-pic"
+          srcset="/Harvest_Royal_Family/assets/basket_strawberris@1x-9589e8e1.png 1x, /Harvest_Royal_Family/assets/basket_strawberris@2x-2c1bfc6f.png 2x"
+          src="/Harvest_Royal_Family/assets/basket_strawberris@1x-9589e8e1.png"
+          width="239"
+          height="187"
+          alt="basket with strawberries"
+        />
+        <p class="hero-desc">
+          Sweet and juicy, strawberries are packed with vitamin C and
+          antioxidants, making them a delicious and healthy snack
+        </p>
+      </div>
+    </div>
   </div>
 </section>
-
-<!-- SOME IMPORTANT MOMENTS -->
-<!-- ДО ПОСИЛАНЬ ПРОПИСУВАТИ target="_blank" rel="noreferrer noopener -->
-<!-- id НАСТЯ -->
-<!-- cmlvdsmsz -->
 
       <section class="section-how-it-works" id="how-it-works">
 
