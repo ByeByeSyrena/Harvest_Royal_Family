@@ -17,7 +17,7 @@
     <title>Fresh Harvest Box</title>
     
     <script type="module" crossorigin src="/Harvest_Royal_Family/assets/index-30839b11.js"></script>
-    <link rel="stylesheet" href="/Harvest_Royal_Family/assets/index-c995365d.css">
+    <link rel="stylesheet" href="/Harvest_Royal_Family/assets/index-20f93b64.css">
   </head>
   <body>
     <header class="header">
@@ -50,14 +50,51 @@
       </svg>
       <span class="header-logo-text link">FRESH HARVEST BOX</span></a
     >
-    <button class="burger js-open-menu" type="button" aria-label="Main menu">
-      <svg width="24" height="24" aria-label="Switch on mobile menu">
-        <use href="/Harvest_Royal_Family/assets/sprite-454a59bf.svg#gg_menu-left"></use>
-      </svg>
-    </button>
+    <button type="button"
+      class="menu-toggle js-open-menu"
+      aria-label="Main menu"
+  
+    >
+      <svg
+        class="mobil-icon-open"
+        width="24"
+        height="24"
+        aria-label="Преключатель мобильного меню"
+      >
+        <use
+          class="icon-menu"
+          href="../img/icons/sprite.svg#gg_menu-left"
+        ></use>
   </div>
 </header>
 <!-- MOB -->
+<div class="menu-container js-menu-container is-open" id="mobile-menu">
+  <div class="mobile-header"
+  >
+  <div class="menu-header container">
+    <a href="../index.html" class="header-logo link">
+      <svg class="header-logo-icon" width="16" height="16">
+        <use href="../img/icons/sprite.svg#icon-logo"></use>
+      </svg>
+      <span class="header-logo-text link">FRESH HARVEST BOX</span></a
+    >
+    <button  class="close-menu js-close-menu" 
+    type="button"
+    aria-label="Close main menu"
+    > 
+    <svg
+    class=""
+    width="24"
+    height="24"
+    aria-label="Преключатель мобильного меню">
+    <use
+      class="icon-cross modal-icon"
+      href="../img/icons/sprite.svg#icon-closed"
+    ></use></svg>
+  </button>
+</div>
+</div>
+  <ul class="mobile-menu list">
 <div class="mobile-menu js-menu-container">
   <div class="menu-header">
     <button
@@ -109,6 +146,12 @@
         <img src="/Harvest_Royal_Family/assets/girlnew-560575d0.jpg" alt="girl" class="hero-girl" />
       </picture>
     </div>
+    <!-- BTN SHOP NOW -->
+    <div class="hero-btn-container">
+      <button class="hero-btn" type="button">
+        <h2 class="hero-btn-desc"><a href="#fruits">shop now</a></h2>
+      </button>
+    </div>
     <div class="hero-title-box">
       <h1 class="hero-title">
         fresh harvest box<br />
@@ -159,87 +202,81 @@
         alt="banana"
       />
     </picture>
-    <!-- BTN SHOP NOW -->
-    <div class="hero-btn-container">
-      <button class="hero-btn" type="button">
-        <h2 class="hero-btn-desc"><a href="#fruits">shop now</a></h2>
-      </button>
-    </div>
-  </div>
 
-  <!-- Yulia Part  -->
+    <!-- Yulia Part  -->
 
-  <div class="hero-desc-section">
-    <!-- first side -->
-    <div class="hero-first-container">
-      <p class="hero-description">
-        Our expertly curated fruit baskets are made with the freshest, highest
-        quality fruits available. Whether you are looking for a healthy snack or
-        a gift for a loved one, Fresh Harvest Box has got you covered.
-      </p>
-      <div class="hero-first-wrapper">
-        <p class="hero-first-title">Fruit</p>
-        <img
-          class="hero-first-pic"
-          srcset="/Harvest_Royal_Family/assets/watermelon@1x-8a254fb3.png 1x, /Harvest_Royal_Family/assets/watermelon@2x-83a7de66.png 2x"
-          src="/Harvest_Royal_Family/assets/watermelon@1x-8a254fb3.png"
-          width="200"
-          height="172"
-          alt="watermelon"
-        />
-        <p class="hero-desc">
-          Refreshing and juicy, watermelon is the perfect summer treat and a
-          great source of hydration
+    <div class="hero-desc-section">
+      <!-- first side -->
+      <div class="hero-first-container">
+        <p class="hero-description">
+          Our expertly curated fruit baskets are made with the freshest, highest
+          quality fruits available. Whether you are looking for a healthy snack
+          or a gift for a loved one, Fresh Harvest Box has got you covered.
         </p>
-      </div>
-    </div>
-    <!-- second side-->
-
-    <div class="hero-second-container">
-      <div class="hero-scroll-container">
-        <div>
-          <ul class="hero-scrol-list list">
-            <li>
-              <button class="hero-scroll-btn-one" type="button">
-                <h3 class="hero-scroll-btn-title">&#35;organic</h3>
-              </button>
-            </li>
-            <li>
-              <button class="hero-scroll-btn-one" type="button">
-                <h3 class="hero-scroll-btn-title">&#35;products</h3>
-              </button>
-            </li>
-          </ul>
-        </div>
-        <div>
-          <ul class="hero-scrol-list hero-scrol-list-unite list">
-            <li>
-              <button class="hero-scroll-btn-two" type="button">
-                <h3 class="hero-scroll-btn-title">&#35;basket</h3>
-              </button>
-            </li>
-            <li>
-              <button class="hero-scroll-btn-two" type="button">
-                <h3 class="hero-scroll-btn-title">&#35;fruits</h3>
-              </button>
-            </li>
-          </ul>
+        <div class="hero-first-wrapper">
+          <p class="hero-first-title">Fruit</p>
+          <img
+            class="hero-first-pic"
+            srcset="/Harvest_Royal_Family/assets/watermelon@1x-8a254fb3.png 1x, /Harvest_Royal_Family/assets/watermelon@2x-83a7de66.png 2x"
+            src="/Harvest_Royal_Family/assets/watermelon@1x-8a254fb3.png"
+            width="200"
+            height="172"
+            alt="watermelon"
+          />
+          <p class="hero-desc">
+            Refreshing and juicy, watermelon is the perfect summer treat and a
+            great source of hydration
+          </p>
         </div>
       </div>
-      <div class="hero-second-wrapper">
-        <p class="hero-second-title">Fruit</p>
-        <img
-          class="hero-second-pic"
-          srcset="/Harvest_Royal_Family/assets/basket_strawberris@1x-9589e8e1.png 1x, /Harvest_Royal_Family/assets/basket_strawberris@2x-2c1bfc6f.png 2x"
-          src="/Harvest_Royal_Family/assets/basket_strawberris@1x-9589e8e1.png"
-          width="239"
-          height="187"
-          alt="basket with strawberries"
-        />
-        <p class="hero-desc">
-          Sweet and juicy, strawberries are packed with vitamin C and
-          antioxidants, making them a delicious and healthy snack
-        </p>
+      <!-- second side-->
+
+      <div class="hero-second-container">
+        <div class="hero-scroll-container">
+          <div>
+            <ul class="hero-scrol-list list">
+              <li>
+                <button class="hero-scroll-btn-one" type="button">
+                  <h3 class="hero-scroll-btn-title">&#35;organic</h3>
+                </button>
+              </li>
+              <li>
+                <button class="hero-scroll-btn-one" type="button">
+                  <h3 class="hero-scroll-btn-title">&#35;products</h3>
+                </button>
+              </li>
+            </ul>
+          </div>
+          <div>
+            <ul class="hero-scrol-list hero-scrol-list-unite list">
+              <li>
+                <button class="hero-scroll-btn-two" type="button">
+                  <h3 class="hero-scroll-btn-title">&#35;basket</h3>
+                </button>
+              </li>
+              <li>
+                <button class="hero-scroll-btn-two" type="button">
+                  <h3 class="hero-scroll-btn-title">&#35;fruits</h3>
+                </button>
+              </li>
+            </ul>
+          </div>
+        </div>
+        <div class="hero-second-wrapper">
+          <p class="hero-second-title">Fruit</p>
+          <img
+            class="hero-second-pic"
+            srcset="/Harvest_Royal_Family/assets/basket_strawberris@1x-9589e8e1.png 1x, /Harvest_Royal_Family/assets/basket_strawberris@2x-2c1bfc6f.png 2x"
+            src="/Harvest_Royal_Family/assets/basket_strawberris@1x-9589e8e1.png"
+            width="239"
+            height="187"
+            alt="basket with strawberries"
+          />
+          <p class="hero-desc">
+            Sweet and juicy, strawberries are packed with vitamin C and
+            antioxidants, making them a delicious and healthy snack
+          </p>
+        </div>
       </div>
     </div>
   </div>
