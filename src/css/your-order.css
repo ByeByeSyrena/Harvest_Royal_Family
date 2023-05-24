@@ -11,12 +11,12 @@
   }
 }
 .yourorder-modal-icon-open {
-  fill: var(--white-color);
+  fill: #ffffff;
   margin-top: auto;
 }
 .btn-uppertitle {
   margin: auto;
-
+​
   font-weight: 500;
   font-size: 18px;
   line-height: 1.33;
@@ -25,10 +25,10 @@
   text-align: center;
   letter-spacing: -0.04em;
   text-transform: uppercase;
-
-  color: var(--white-color);
-
-  text-shadow: var(--shadow);
+​
+  color: #ffffff;
+​
+  text-shadow: 0px 4px 70px rgba(0, 0, 0, 0.1);
   transform: rotate(-14deg);
 }
 @media screen and (max-width: 767px) {
@@ -37,7 +37,7 @@
     line-height: 1.29;
   }
 }
-
+​
 .backdrop {
   display: flex;
   position: fixed;
@@ -46,7 +46,7 @@
   left: 0;
   right: 0;
   bottom: 0;
-
+​
   background-color: var(--bg-thank-you-color);
   transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1),
     visibility 250ms cubic-bezier(0.4, 0, 0.2, 1);
@@ -58,14 +58,17 @@
 }
 .yourorder-modal {
   display: block;
+  eft: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
   position: relative;
   z-index: 101;
-  height: calc(100% - 2%);
+  max-height: 903px;
+  /* height: calc(100% - 2%); */
   width: calc(100% - 2%);
   top: 1%;
   left: 50%;
-  top: 50%;
-  transform: translate(-50%, -50%);
+  transform: translateX(-50%);
   overflow: scroll;
   border-radius: 20px;
   padding: 20px;
@@ -75,22 +78,23 @@
 }
 @media screen and (min-width: 375px) {
   .yourorder-modal {
-    height: 907px;
+    max-height: 903px;
+    /* height: calc(100%-2%); */
     width: 335px;
+    /* max-height: 853px; */
   }
 }
 @media screen and (min-width: 768px) {
   .yourorder-modal {
     width: 704px;
-    height: 915px;
     overflow: scroll;
     padding: 40px;
     background-image: url(../img/modal-your-oder/471x458-dama-desk@1x.png);
-
+​
     background-position: 414px 100%;
     background-size: 469px;
   }
-
+​
   @media (min-device-pixel-ratio: 2),
     (min-resolution: 192dpi),
     (min-resolution: 2dppx) {
@@ -101,14 +105,15 @@
 }
 @media screen and (min-width: 1280px) {
   .yourorder-modal {
+    max-height: 911px;
     width: 891px;
     left: 50%;
     padding: 40px;
-    background-position: 420px 453px;
+    background-position: 420px 100%;
     background-size: 471px;
     background-image: url(../img/modal-your-oder/471x458-dama-desk@1x.png);
   }
-
+​
   @media (min-device-pixel-ratio: 2),
     (min-resolution: 192dpi),
     (min-resolution: 2dppx) {
@@ -134,7 +139,7 @@
     height: 28px;
   }
 }
-
+​
 .yourorder-modal-icon-close {
   fill: var(--red-color);
   margin: auto;
@@ -145,7 +150,7 @@
     height: 14px;
   }
 }
-
+​
 .yourorder-modal-title {
   margin-bottom: 40px;
   font-weight: 500;
@@ -164,7 +169,7 @@
     line-height: 1.1;
   }
 }
-
+​
 .container-form-checkbox {
   width: 100%;
   display: flex;
@@ -185,60 +190,52 @@
   }
 }
 .yourorder-modal-form-checkbox {
+  width: 100%;
+  display: flex;
   justify-content: space-between;
   position: relative;
   margin: 0;
-  width: 295px;
+  width: 100%;
   height: 119px;
   border-radius: 20px;
   padding-right: 32px;
 }
-
+​
 @media screen and (min-width: 768px) {
   .yourorder-modal-form-checkbox {
-    width: 200px;
-    height: 250px;
-  }
-}
-@media screen and (min-width: 1280px) {
-  .yourorder-modal-form-checkbox {
-    width: 257px;
-    height: 308px;
-  }
-}
-
-.container-checkbox {
-}
-@media screen and (min-width: 768px) {
-  .container-checkbox {
     flex-direction: column;
-    height: 100%;
+    width: 200px;
+​
+    height: 250px;
     padding-right: 0;
     padding-bottom: 14px;
+    padding-top: 40px;
   }
 }
 @media screen and (min-width: 1280px) {
-  .container-checkbox {
+  .yourorder-modal-form-checkbox {
     flex-direction: column;
-    height: 100%;
+    width: 257px;
+    height: 308px;
+    padding-top: 40px;
   }
 }
-.container-checkbox-strawberry {
+.checkbox-strawberrye {
   background: var(--peach-color);
 }
-.container-checkbox-apple {
+.checkbox-apple {
   background: var(--second-yellow-color);
 }
-.container-checkbox-fruits {
+.checkbox-fruits {
   background: var(--second-green-color);
 }
 .yourorder-modal-form-checkbox-imput {
   position: absolute;
-
+​
   top: 14px;
   right: 14px;
   cursor: pointer;
-
+​
   appearance: none;
   width: 16px;
   height: 16px;
@@ -284,51 +281,68 @@
   + .yourorder-modal-form-checkbox-icon {
   fill: var(--white-color);
 }
-.container-text {
-  min-width: 257px;
-  min-height: 120px;
+/* .container-text {
   padding-top: 20px;
   padding-left: 20px;
 }
 @media screen and (min-width: 768px) {
   .container-text {
-    display: flex;
-    margin-top: 25px;
-    flex-direction: column;
+    padding-top: 40px;
+    padding-left: 20px;
   }
-}
+} */
 .yourorder-modal-form-checkbox-head {
+  font-family: 'DM Sans';
+  font-style: normal;
   font-weight: 700;
   font-size: 18px;
-  line-height: 1.33;
+  line-height: 1.17;
+  /* identical to box height, or 117% */
+​
   display: flex;
   align-items: center;
   letter-spacing: -0.04em;
-
+​
   color: var(--white-color);
+  margin-left: 20px;
+  margin-bottom: 4px;
 }
-
+@media screen and (min-width: 1280px) {
+  .yourorder-modal-form-checkbox-head {
+    font-size: 24px;
+    margin-bottom: 8px;
+  }
+}
+​
 .yourorder-modal-form-checkbox-uppertitle {
+  font-family: 'DM Sans';
+  font-style: normal;
   font-weight: 400;
   font-size: 14px;
   line-height: 1.29;
   display: flex;
   align-items: center;
   letter-spacing: -0.02em;
-
+  margin-left: 20px;
   color: var(--white-color);
+  margin-bottom: 4px;
+}
+@media screen and (min-width: 768px) {
+  .yourorder-modal-form-checkbox-uppertitle {
+  }
+}
+@media screen and (min-width: 1280px) {
+  .yourorder-modal-form-checkbox-uppertitle {
+    font-size: 18px;
+  }
 }
 .yourorder-modal-form-checkbox-str-img {
-  position: absolute;
-  right: 32px;
-  top: 16px;
   margin: auto 0;
   width: 88px;
   height: 95px;
 }
 @media screen and (min-width: 768px) {
   .yourorder-modal-form-checkbox-str-img {
-    top: 40%;
     margin: auto;
     width: 133px;
     height: 148px;
@@ -342,17 +356,12 @@
   }
 }
 .yourorder-modal-form-checkbox-appl-img {
-  position: absolute;
-  right: 32px;
-  top: 16px;
   margin: auto 0;
   width: 106px;
   height: 95px;
 }
 @media screen and (min-width: 768px) {
   .yourorder-modal-form-checkbox-appl-img {
-    top: 35%;
-    right: 9%;
     margin: auto;
     width: 172px;
     height: 148px;
@@ -366,17 +375,12 @@
   }
 }
 .yourorder-modal-form-checkbox-frut-img {
-  position: absolute;
-  right: 32px;
-  top: 16px;
   margin: auto 0;
   width: 107px;
   height: 95px;
 }
 @media screen and (min-width: 768px) {
   .yourorder-modal-form-checkbox-frut-img {
-    top: 38%;
-    right: 5%;
     margin: auto;
     width: 172px;
     height: 148px;
@@ -389,7 +393,7 @@
     height: 196px;
   }
 }
-
+​
 .container-input {
   display: flex;
   flex-wrap: wrap;
@@ -474,7 +478,7 @@
   border: 1px solid var(--black-color);
   border-radius: 20px;
 }
-
+​
 .yourorder-modal-submit-btn {
   border: none;
   background: var(--submit-green-color);
