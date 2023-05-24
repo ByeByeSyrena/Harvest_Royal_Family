@@ -58,9 +58,13 @@
 }
 .yourorder-modal {
   display: block;
+  eft: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
   position: relative;
   z-index: 101;
-  height: calc(100% - 2%);
+  max-height: 903px;
+  /* height: calc(100% - 2%); */
   width: calc(100% - 2%);
   top: 1%;
   left: 50%;
@@ -74,8 +78,10 @@
 }
 @media screen and (min-width: 375px) {
   .yourorder-modal {
-    height: calc(100%-2%);
+    max-height: 903px;
+    /* height: calc(100%-2%); */
     width: 335px;
+    /* max-height: 853px; */
   }
 }
 @media screen and (min-width: 768px) {
@@ -99,10 +105,11 @@
 }
 @media screen and (min-width: 1280px) {
   .yourorder-modal {
+    max-height: 911px;
     width: 891px;
     left: 50%;
     padding: 40px;
-    background-position: 420px 453px;
+    background-position: 420px 100%;
     background-size: 471px;
     background-image: url(../img/modal-your-oder/471x458-dama-desk@1x.png);
   }
@@ -184,8 +191,6 @@
 }
 .yourorder-modal-form-checkbox {
   width: 100%;
-}
-.container-checkbox {
   display: flex;
   justify-content: space-between;
   position: relative;
@@ -195,27 +200,33 @@
   border-radius: 20px;
   padding-right: 32px;
 }
+
 @media screen and (min-width: 768px) {
-  .container-checkbox {
+  .yourorder-modal-form-checkbox {
     flex-direction: column;
-    height: 100%;
+    width: 200px;
+
+    height: 250px;
     padding-right: 0;
     padding-bottom: 14px;
+    padding-top: 40px;
   }
 }
 @media screen and (min-width: 1280px) {
-  .container-checkbox {
+  .yourorder-modal-form-checkbox {
     flex-direction: column;
-    height: 100%;
+    width: 257px;
+    height: 308px;
+    padding-top: 40px;
   }
 }
-.container-checkbox-strawberry {
+.checkbox-strawberrye {
   background: var(--peach-color);
 }
-.container-checkbox-apple {
+.checkbox-apple {
   background: var(--second-yellow-color);
 }
-.container-checkbox-fruits {
+.checkbox-fruits {
   background: var(--second-green-color);
 }
 .yourorder-modal-form-checkbox-imput {
@@ -270,7 +281,7 @@
   + .yourorder-modal-form-checkbox-icon {
   fill: var(--white-color);
 }
-.container-text {
+/* .container-text {
   padding-top: 20px;
   padding-left: 20px;
 }
@@ -279,27 +290,51 @@
     padding-top: 40px;
     padding-left: 20px;
   }
-}
+} */
 .yourorder-modal-form-checkbox-head {
+  font-family: 'DM Sans';
+  font-style: normal;
   font-weight: 700;
   font-size: 18px;
-  line-height: 1.33;
+  line-height: 1.17;
+  /* identical to box height, or 117% */
+
   display: flex;
   align-items: center;
   letter-spacing: -0.04em;
 
   color: var(--white-color);
+  margin-left: 20px;
+  margin-bottom: 4px;
+}
+@media screen and (min-width: 1280px) {
+  .yourorder-modal-form-checkbox-head {
+    font-size: 24px;
+    margin-bottom: 8px;
+  }
 }
 
 .yourorder-modal-form-checkbox-uppertitle {
+  font-family: 'DM Sans';
+  font-style: normal;
   font-weight: 400;
   font-size: 14px;
   line-height: 1.29;
   display: flex;
   align-items: center;
   letter-spacing: -0.02em;
-
+  margin-left: 20px;
   color: var(--white-color);
+  margin-bottom: 4px;
+}
+@media screen and (min-width: 768px) {
+  .yourorder-modal-form-checkbox-uppertitle {
+  }
+}
+@media screen and (min-width: 1280px) {
+  .yourorder-modal-form-checkbox-uppertitle {
+    font-size: 18px;
+  }
 }
 .yourorder-modal-form-checkbox-str-img {
   margin: auto 0;
