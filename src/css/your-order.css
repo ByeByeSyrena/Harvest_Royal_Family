@@ -4,19 +4,21 @@
   display: flex;
   margin: auto;
 }
+
 @media screen and (max-width: 767px) {
   .conteiner-icon {
     width: 65px;
     height: 28px;
   }
 }
+
 .yourorder-modal-icon-open {
   fill: #ffffff;
   margin-top: auto;
 }
+
 .btn-uppertitle {
   margin: auto;
-​
   font-weight: 500;
   font-size: 18px;
   line-height: 1.33;
@@ -25,20 +27,18 @@
   text-align: center;
   letter-spacing: -0.04em;
   text-transform: uppercase;
-​
   color: #ffffff;
-​
   text-shadow: 0px 4px 70px rgba(0, 0, 0, 0.1);
   transform: rotate(-14deg);
 }
+
 @media screen and (max-width: 767px) {
   .btn-uppertitle {
     font-size: 14px;
     line-height: 1.29;
   }
 }
-​
-.backdrop {
+​ .backdrop {
   display: flex;
   position: fixed;
   z-index: 100;
@@ -46,7 +46,6 @@
   left: 0;
   right: 0;
   bottom: 0;
-​
   background-color: var(--bg-thank-you-color);
   transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1),
     visibility 250ms cubic-bezier(0.4, 0, 0.2, 1);
@@ -58,13 +57,12 @@
 }
 .yourorder-modal {
   display: block;
-  eft: 50%;
+  left: 50%;
   top: 50%;
   transform: translate(-50%, -50%);
   position: relative;
   z-index: 101;
   max-height: 903px;
-  /* height: calc(100% - 2%); */
   width: calc(100% - 2%);
   top: 1%;
   left: 50%;
@@ -90,11 +88,11 @@
     overflow: scroll;
     padding: 40px;
     background-image: url(../img/modal-your-oder/471x458-dama-desk@1x.png);
-​
+
     background-position: 414px 100%;
     background-size: 469px;
   }
-​
+
   @media (min-device-pixel-ratio: 2),
     (min-resolution: 192dpi),
     (min-resolution: 2dppx) {
@@ -113,7 +111,7 @@
     background-size: 471px;
     background-image: url(../img/modal-your-oder/471x458-dama-desk@1x.png);
   }
-​
+
   @media (min-device-pixel-ratio: 2),
     (min-resolution: 192dpi),
     (min-resolution: 2dppx) {
@@ -132,6 +130,7 @@
   width: 24px;
   height: 24px;
 }
+
 @media screen and (min-width: 768px) {
   .yourorder-modal-close-btn {
     top: 20px;
@@ -139,7 +138,7 @@
     height: 28px;
   }
 }
-​
+
 .yourorder-modal-icon-close {
   fill: var(--red-color);
   margin: auto;
@@ -150,8 +149,7 @@
     height: 14px;
   }
 }
-​
-.yourorder-modal-title {
+​ .yourorder-modal-title {
   margin-bottom: 40px;
   font-weight: 500;
   font-size: 28px;
@@ -169,8 +167,7 @@
     line-height: 1.1;
   }
 }
-​
-.container-form-checkbox {
+​ .container-form-checkbox {
   width: 100%;
   display: flex;
   flex-wrap: wrap;
@@ -200,12 +197,10 @@
   border-radius: 20px;
   padding-right: 32px;
 }
-​
 @media screen and (min-width: 768px) {
   .yourorder-modal-form-checkbox {
     flex-direction: column;
     width: 200px;
-​
     height: 250px;
     padding-right: 0;
     padding-bottom: 14px;
@@ -220,6 +215,7 @@
     padding-top: 40px;
   }
 }
+
 .checkbox-strawberrye {
   background: var(--peach-color);
 }
@@ -231,11 +227,9 @@
 }
 .yourorder-modal-form-checkbox-imput {
   position: absolute;
-​
   top: 14px;
   right: 14px;
   cursor: pointer;
-​
   appearance: none;
   width: 16px;
   height: 16px;
@@ -281,40 +275,26 @@
   + .yourorder-modal-form-checkbox-icon {
   fill: var(--white-color);
 }
-/* .container-text {
-  padding-top: 20px;
-  padding-left: 20px;
-}
-@media screen and (min-width: 768px) {
-  .container-text {
-    padding-top: 40px;
-    padding-left: 20px;
-  }
-} */
+
 .yourorder-modal-form-checkbox-head {
-  font-family: 'DM Sans';
-  font-style: normal;
   font-weight: 700;
   font-size: 18px;
   line-height: 1.17;
-  /* identical to box height, or 117% */
-​
   display: flex;
   align-items: center;
   letter-spacing: -0.04em;
-​
   color: var(--white-color);
   margin-left: 20px;
   margin-bottom: 4px;
 }
+
 @media screen and (min-width: 1280px) {
   .yourorder-modal-form-checkbox-head {
     font-size: 24px;
     margin-bottom: 8px;
   }
 }
-​
-.yourorder-modal-form-checkbox-uppertitle {
+​ .yourorder-modal-form-checkbox-uppertitle {
   font-family: 'DM Sans';
   font-style: normal;
   font-weight: 400;
@@ -393,8 +373,7 @@
     height: 196px;
   }
 }
-​
-.container-input {
+​ .container-input {
   display: flex;
   flex-wrap: wrap;
   gap: 12px;
@@ -478,8 +457,7 @@
   border: 1px solid var(--black-color);
   border-radius: 20px;
 }
-​
-.yourorder-modal-submit-btn {
+​ .yourorder-modal-submit-btn {
   border: none;
   background: var(--submit-green-color);
   border-radius: 100px;
