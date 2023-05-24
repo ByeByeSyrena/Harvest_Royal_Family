@@ -64,7 +64,8 @@
   width: calc(100% - 2%);
   top: 1%;
   left: 50%;
-  transform: translateX(-50%);
+  top: 50%;
+  transform: translate(-50%, -50%);
   overflow: scroll;
   border-radius: 20px;
   padding: 20px;
@@ -74,13 +75,14 @@
 }
 @media screen and (min-width: 375px) {
   .yourorder-modal {
-    height: calc(100%-2%);
+    height: 907px;
     width: 335px;
   }
 }
 @media screen and (min-width: 768px) {
   .yourorder-modal {
     width: 704px;
+    height: 915px;
     overflow: scroll;
     padding: 40px;
     background-image: url(../img/modal-your-oder/471x458-dama-desk@1x.png);
@@ -183,17 +185,29 @@
   }
 }
 .yourorder-modal-form-checkbox {
-  width: 100%;
-}
-.container-checkbox {
-  display: flex;
   justify-content: space-between;
   position: relative;
   margin: 0;
-  width: 100%;
+  width: 295px;
   height: 119px;
   border-radius: 20px;
   padding-right: 32px;
+}
+
+@media screen and (min-width: 768px) {
+  .yourorder-modal-form-checkbox {
+    width: 200px;
+    height: 250px;
+  }
+}
+@media screen and (min-width: 1280px) {
+  .yourorder-modal-form-checkbox {
+    width: 257px;
+    height: 308px;
+  }
+}
+
+.container-checkbox {
 }
 @media screen and (min-width: 768px) {
   .container-checkbox {
@@ -271,13 +285,16 @@
   fill: var(--white-color);
 }
 .container-text {
+  min-width: 257px;
+  min-height: 120px;
   padding-top: 20px;
   padding-left: 20px;
 }
 @media screen and (min-width: 768px) {
   .container-text {
-    padding-top: 40px;
-    padding-left: 20px;
+    display: flex;
+    margin-top: 25px;
+    flex-direction: column;
   }
 }
 .yourorder-modal-form-checkbox-head {
@@ -302,12 +319,16 @@
   color: var(--white-color);
 }
 .yourorder-modal-form-checkbox-str-img {
+  position: absolute;
+  right: 32px;
+  top: 16px;
   margin: auto 0;
   width: 88px;
   height: 95px;
 }
 @media screen and (min-width: 768px) {
   .yourorder-modal-form-checkbox-str-img {
+    top: 40%;
     margin: auto;
     width: 133px;
     height: 148px;
@@ -321,12 +342,17 @@
   }
 }
 .yourorder-modal-form-checkbox-appl-img {
+  position: absolute;
+  right: 32px;
+  top: 16px;
   margin: auto 0;
   width: 106px;
   height: 95px;
 }
 @media screen and (min-width: 768px) {
   .yourorder-modal-form-checkbox-appl-img {
+    top: 35%;
+    right: 9%;
     margin: auto;
     width: 172px;
     height: 148px;
@@ -340,12 +366,17 @@
   }
 }
 .yourorder-modal-form-checkbox-frut-img {
+  position: absolute;
+  right: 32px;
+  top: 16px;
   margin: auto 0;
   width: 107px;
   height: 95px;
 }
 @media screen and (min-width: 768px) {
   .yourorder-modal-form-checkbox-frut-img {
+    top: 38%;
+    right: 5%;
     margin: auto;
     width: 172px;
     height: 148px;
