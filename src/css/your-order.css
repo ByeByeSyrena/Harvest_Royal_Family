@@ -25,9 +25,7 @@
   text-align: center;
   letter-spacing: -0.04em;
   text-transform: uppercase;
-
   color: var(--white-color);
-
   text-shadow: var(--shadow);
   transform: rotate(-14deg);
 }
@@ -37,7 +35,6 @@
     line-height: 1.29;
   }
 }
-
 .backdrop {
   display: flex;
   position: fixed;
@@ -59,34 +56,31 @@
 .yourorder-modal {
   display: block;
   position: relative;
-  z-index: 101;
-  height: calc(100% - 2%);
-  width: calc(100% - 2%);
-  top: 1%;
   left: 50%;
   top: 50%;
   transform: translate(-50%, -50%);
-  overflow: scroll;
+  z-index: 101;
+  max-height: 903px;
+  height: calc(100% - 5%);
   border-radius: 20px;
   padding: 20px;
+  overflow: scroll;
   background: var(--white-color);
   background-repeat: no-repeat;
   background-attachment: local;
 }
 @media screen and (min-width: 375px) {
   .yourorder-modal {
-    height: 907px;
     width: 335px;
+    max-height: 903px;
   }
 }
 @media screen and (min-width: 768px) {
   .yourorder-modal {
     width: 704px;
-    height: 915px;
-    overflow: scroll;
+    max-height: 853px;
     padding: 40px;
     background-image: url(../img/modal-your-oder/471x458-dama-desk@1x.png);
-
     background-position: 414px 100%;
     background-size: 469px;
   }
@@ -102,11 +96,10 @@
 @media screen and (min-width: 1280px) {
   .yourorder-modal {
     width: 891px;
-    left: 50%;
-    padding: 40px;
-    background-position: 420px 453px;
-    background-size: 471px;
+    max-height: 911px;
     background-image: url(../img/modal-your-oder/471x458-dama-desk@1x.png);
+    background-position: 420px 100%;
+    background-size: 471px;
   }
 
   @media (min-device-pixel-ratio: 2),
@@ -119,13 +112,13 @@
 }
 .yourorder-modal-close-btn {
   position: absolute;
-  padding: 0;
   top: 22px;
   right: 20px;
-  border: none;
-  background: none;
   width: 24px;
   height: 24px;
+  padding: 0;
+  border: none;
+  background: none;
 }
 @media screen and (min-width: 768px) {
   .yourorder-modal-close-btn {
@@ -134,7 +127,6 @@
     height: 28px;
   }
 }
-
 .yourorder-modal-icon-close {
   fill: var(--red-color);
   margin: auto;
@@ -145,9 +137,10 @@
     height: 14px;
   }
 }
-
 .yourorder-modal-title {
   margin-bottom: 40px;
+  font-family: 'DM Sans';
+  font-style: normal;
   font-weight: 500;
   font-size: 28px;
   line-height: 1;
@@ -164,7 +157,8 @@
     line-height: 1.1;
   }
 }
-
+/* .yourorder-form {
+} */
 .container-form-checkbox {
   width: 100%;
   display: flex;
@@ -180,34 +174,21 @@
 }
 @media screen and (min-width: 1280px) {
   .container-form-checkbox {
-    flex-direction: row;
-    flex-wrap: nowrap;
+    gap: 20px;
   }
 }
 .yourorder-modal-form-checkbox {
+  width: 100%;
+}
+.container-checkbox {
+  display: flex;
   justify-content: space-between;
   position: relative;
   margin: 0;
-  width: 295px;
+  width: 100%;
   height: 119px;
   border-radius: 20px;
   padding-right: 32px;
-}
-
-@media screen and (min-width: 768px) {
-  .yourorder-modal-form-checkbox {
-    width: 200px;
-    height: 250px;
-  }
-}
-@media screen and (min-width: 1280px) {
-  .yourorder-modal-form-checkbox {
-    width: 257px;
-    height: 308px;
-  }
-}
-
-.container-checkbox {
 }
 @media screen and (min-width: 768px) {
   .container-checkbox {
@@ -215,12 +196,6 @@
     height: 100%;
     padding-right: 0;
     padding-bottom: 14px;
-  }
-}
-@media screen and (min-width: 1280px) {
-  .container-checkbox {
-    flex-direction: column;
-    height: 100%;
   }
 }
 .container-checkbox-strawberry {
@@ -251,12 +226,6 @@
     height: 20px;
   }
 }
-@media screen and (min-width: 1280px) {
-  .yourorder-modal-form-checkbox-imput {
-    width: 20px;
-    height: 20px;
-  }
-}
 .yourorder-modal-form-checkbox-icon {
   position: absolute;
   top: 19px;
@@ -272,63 +241,61 @@
     right: 20px;
   }
 }
-@media screen and (min-width: 1280px) {
-  .yourorder-modal-form-checkbox-icon {
-    width: 8px;
-    height: 8px;
-    top: 20px;
-    right: 20px;
-  }
-}
 .yourorder-modal-form-checkbox-imput:checked
   + .yourorder-modal-form-checkbox-icon {
   fill: var(--white-color);
 }
 .container-text {
-  min-width: 257px;
-  min-height: 120px;
   padding-top: 20px;
   padding-left: 20px;
+  margin-bottom: 4px;
 }
 @media screen and (min-width: 768px) {
   .container-text {
-    display: flex;
-    margin-top: 25px;
-    flex-direction: column;
+    padding-top: 40px;
   }
 }
 .yourorder-modal-form-checkbox-head {
+  font-family: 'DM Sans';
+  font-style: normal;
   font-weight: 700;
   font-size: 18px;
   line-height: 1.33;
   display: flex;
   align-items: center;
   letter-spacing: -0.04em;
-
   color: var(--white-color);
 }
-
+@media screen and (min-width: 768px) {
+  .yourorder-modal-form-checkbox-head {
+    margin-bottom: 2px;
+  }
+}
+@media screen and (min-width: 1280px) {
+  .yourorder-modal-form-checkbox-head {
+    margin-bottom: 8px;
+    font-size: 24px;
+    line-height: 1.17;
+  }
+}
 .yourorder-modal-form-checkbox-uppertitle {
+  font-family: 'DM Sans';
+  font-style: normal;
   font-weight: 400;
   font-size: 14px;
   line-height: 1.29;
   display: flex;
   align-items: center;
   letter-spacing: -0.02em;
-
   color: var(--white-color);
 }
 .yourorder-modal-form-checkbox-str-img {
-  position: absolute;
-  right: 32px;
-  top: 16px;
   margin: auto 0;
   width: 88px;
   height: 95px;
 }
 @media screen and (min-width: 768px) {
   .yourorder-modal-form-checkbox-str-img {
-    top: 40%;
     margin: auto;
     width: 133px;
     height: 148px;
@@ -342,17 +309,12 @@
   }
 }
 .yourorder-modal-form-checkbox-appl-img {
-  position: absolute;
-  right: 32px;
-  top: 16px;
   margin: auto 0;
   width: 106px;
   height: 95px;
 }
 @media screen and (min-width: 768px) {
   .yourorder-modal-form-checkbox-appl-img {
-    top: 35%;
-    right: 9%;
     margin: auto;
     width: 172px;
     height: 148px;
@@ -366,17 +328,12 @@
   }
 }
 .yourorder-modal-form-checkbox-frut-img {
-  position: absolute;
-  right: 32px;
-  top: 16px;
   margin: auto 0;
   width: 107px;
   height: 95px;
 }
 @media screen and (min-width: 768px) {
   .yourorder-modal-form-checkbox-frut-img {
-    top: 38%;
-    right: 5%;
     margin: auto;
     width: 172px;
     height: 148px;
@@ -389,7 +346,8 @@
     height: 196px;
   }
 }
-
+/* .yourorder-modal-form-checkbox-img {
+} */
 .container-input {
   display: flex;
   flex-wrap: wrap;
@@ -417,16 +375,10 @@
   font-size: 14px;
   line-height: 1.29;
   letter-spacing: -0.04em;
-  color: #000000;
+  color: var(--black-color);
   opacity: 0.5;
-  outline: var(--red-color);
 }
 @media screen and (min-width: 768px) {
-  .yourorder-modal-label {
-    height: 48px;
-  }
-}
-@media screen and (min-width: 1280px) {
   .yourorder-modal-label {
     height: 48px;
   }
@@ -438,12 +390,14 @@
   border: 1px solid var(--black-color);
   border-radius: 100px;
 }
+
 .yourorder-modal-input:valid {
   outline-color: var(--outline-total-green);
 }
 .yourorder-modal-input:invalid {
   outline-color: var(--outline-total-red);
 }
+
 .yourorder-modal-label-texterea {
   height: 132px;
   width: 100%;
@@ -461,11 +415,6 @@
     height: 145px;
   }
 }
-@media screen and (min-width: 1280px) {
-  .yourorder-modal-label-texterea {
-    height: 145px;
-  }
-}
 .yourorder-modal-textarea {
   padding: 12px 24px;
   height: 100%;
@@ -474,7 +423,6 @@
   border: 1px solid var(--black-color);
   border-radius: 20px;
 }
-
 .yourorder-modal-submit-btn {
   border: none;
   background: var(--submit-green-color);
@@ -482,6 +430,8 @@
   width: 92px;
   height: 42px;
   padding: 0;
+  font-family: 'DM Sans';
+  font-style: normal;
   font-weight: 400;
   font-size: 14px;
   line-height: 1.29;
@@ -490,12 +440,6 @@
   color: var(--white-color);
 }
 @media screen and (min-width: 768px) {
-  .yourorder-modal-submit-btn {
-    height: 48px;
-    width: 114px;
-  }
-}
-@media screen and (min-width: 1280px) {
   .yourorder-modal-submit-btn {
     height: 48px;
     width: 114px;
