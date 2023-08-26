@@ -24,7 +24,7 @@ function goTop() {
 
   if (window.pageYOffset > 0) {
   
-    window.scrollBy(0, -25); //другий аргумент - це швидкість скролу
+    window.scrollBy(0, -25);
     setTimeout(goTop, 0); 
   }
 }

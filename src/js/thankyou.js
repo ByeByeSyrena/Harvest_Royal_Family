@@ -23,6 +23,15 @@ const closeFormModal = () => {
         successModal.classList.remove(ACTIVE_CLASS_NAME);
 };
 
+
+successModal.addEventListener("click", (e) => {
+        if (e.target === successModal) {
+                e.stopPropagation();
+                closeFormModal();
+        }
+});
+
+
 closeBtns.forEach((btn) => {
         btn.addEventListener("click", (e) => {
                 e.stopPropagation();
